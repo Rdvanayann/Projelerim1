@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule	^uye-giris$	/ExtraEgitim/index.php?SK=31 [L,NC]
+RewriteRule	^yeni-uye-kayit$	/ExtraEgitim/index.php?SK=22 [L,NC]
+RewriteRule	^hakkimizda$	/ExtraEgitim/index.php?SK=1 [L,NC]

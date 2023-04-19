@@ -1,0 +1,438 @@
+/* <i class="fas fa-5px fa-search"></i>
+font-family: 'Roboto', sans-serif;
+
+rem = html{font-size:10px;} div p{ font-size:2rem;} 20px
+em = body{font-size:10px;} div p{ font-size:2em;} 20px
+
+*/
+
+
+/*common config Group Selector*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+font-size: 7px; /*rem telefon için küçük ekran*/
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif,Arial,Helvetica;
+    background-color: rgb(94, 113, 135);
+    text-align: center;
+    line-height: 1.7;
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+ color: white;
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+
+main #division-2-list ul{
+    list-style-type: none;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.upperCase{
+    text-transform: uppercase;
+}
+
+.lowerCase{
+    text-transform: lowercase;
+}
+
+.col20{
+float: left;
+width: 20%;
+box-sizing: border-box;
+
+}
+
+.col25{
+float: left;
+width: 25%;
+box-sizing: border-box;
+}
+
+.col50{
+float: left;
+width:50%;
+box-sizing: border-box;
+}
+
+.col75{
+float: left;
+width: 75%;
+box-sizing: border-box;
+}
+
+.col100{
+float: left;
+width: 100%;
+box-sizing: border-box;
+}
+
+.line-clamp-1{
+    display: -webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-erient:vertical;
+    overflow:hidden;
+}
+
+.line-clamp-2{
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-erient:vertical;
+    overflow:hidden;
+}
+
+.line-clamp-3{
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-erient:vertical;
+    overflow:hidden;
+}
+
+.line-clamp-4{
+    display: -webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-erient:vertical;
+    overflow:hidden;
+}
+
+/* container */
+
+.container{
+    width: 75rem;
+    margin: 0 auto;
+    padding-left: .3rem;
+    padding-right: .3rem;
+}
+
+/* navbar */
+
+nav{
+    color: #fff;
+    padding: 3rem 0 4rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 20%;
+}
+
+.SANA-YAKIŞIR-AKADEMİ{
+    color: #fff;
+    font-size: 2rem;
+    float: left;
+}
+
+#menu{
+    float: right;
+}
+
+#menu li{
+    display: inline-block;
+    margin:0 3rem  3rem 0;
+}
+
+#menu i{
+    margin-right: rem;
+}
+
+.menu-item i{
+    font-size: 2.5rem;
+}
+
+#menu i:hover{
+    color: black;
+}
+
+#menu a{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    transition: all .3s;
+}
+
+#menu a:hover{
+    color: black;
+    background-color: #fff;
+}
+
+#logo{
+    float: left;
+}
+
+#logo-image{
+    width: 35rem;
+    height: 10rem;
+    border-radius: 5%;
+    transition: all .5s;
+}
+
+#logo-image:hover{
+    opacity: 8;
+    box-shadow: 3px 3px 3px 3px white;
+}
+
+/* header */
+header{
+    height: 15rem;
+    background-color: rgb(249, 6, 46);
+    position: relative;
+}
+
+header.image-header{
+    height: 15rem;
+    width: 100%;
+    background-image: url(image/header.jpg);
+    opacity:0.4;
+    z-index: -1;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1{
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+p{
+    padding: 0.5rem;
+}
+
+.btn-header{
+    color: #fff;
+    background-color: black;
+    font-size: 1rem;
+    line-height: 0.5;
+    border-radius: .25rem;
+    display: inline-block;
+    font-weight: 200;
+    text-align: center;
+    transition: all 0.4s;
+    margin: 1rem 0;
+    padding: 1rem 3.4rem;
+    border: 1ps solid rgb(255, 212, 59);
+    white-space: nowrap; 
+    box-shadow: 1px 2px 3px 4px white;
+}
+
+.btn-header:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 1px 2px 3px 6px white;
+}
+
+/* section-1 */
+
+#division-1-main{
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* section-2 list */
+
+#division-2-list{
+    padding: 2rem;
+}
+
+#area-div{
+    padding: 1.4rem;
+}
+
+#division-2-list{
+    background-color: #fff;
+    color:darkgrey;
+}
+
+.area img{
+    border-radius: 1rem;
+    opacity: 0.9;
+}
+
+.area .area-div h3{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* section-3 */
+
+#division-3-career{
+    width: 100%;
+    height: 50rem;
+    margin: 2rem 0;
+}
+
+#left-main{
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(234, 153, 142);
+}
+
+#right-main{
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(233, 113, 69);
+}
+
+#right-main ul{
+    list-style-type: none;
+}
+
+/* TOP MENU */
+
+#bottom a{
+    position: fixed;
+    border: 1px solid red;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    transition: all .4s;
+}
+
+#bottom a:hover{
+    background-color: white;
+    color: black;
+    font-size: medium;
+    box-shadow: 1px 2px 3px 4px black;
+}
+
+/* about us */
+
+#division-contact{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    width: 100%;
+    min-height: 40rem;
+}
+
+/* contact */
+#form-email{
+    width: 100%;
+    /* height: 25rem; */
+    background-color: floralwhite;
+}
+
+#form-email h1,p{
+    color: black;
+    margin-top: 2rem;
+    padding-top: 3rem;
+}
+
+#form-group-all{
+    width: 100%;
+    height: auto;
+}
+
+.form-control{
+    width: 80%;
+    height: 20%;
+    padding: 1rem;
+    border: 1px solid aqua;
+    box-sizing: border-box;  /* w+p+b */
+    border-radius: .5rem;
+}
+
+/* footer */
+
+footer{
+    padding:3rem 3rem 3rem 3rem;
+}
+
+footer a{
+    color: red;
+}
+
+/* responsive design */
+
+/* 
+Ekran Ölçüleri
+0 - 480
+481 - 768
+769 - 1279
++1280
+*/
+
+/* küçük ekran */
+@media screen and(min-width:481px){
+}
+
+/* orta ekran */
+@media screen and(min-width:769px){
+#division-2-list li{
+    width: 47%;
+    margin: 1%;
+    display: inline-block;
+}
+
+html{
+    font-size: 8px;
+}
+}
+
+/* büyük ekran */
+@media screen and(min-width:900px){
+    #division-2-list li{
+        width: 31%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    html{
+        font-size: 9px;
+    }
+}
+
+/* En büyük ekran */
+@media screen and(min-width:1200px){
+    #division-2-list li{
+        width: 20%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    html{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+

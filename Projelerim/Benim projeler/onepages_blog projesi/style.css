@@ -1,0 +1,72 @@
+/*
+Project name: One Pages Blog Pages
+Project Author: Software Developer.Rıdvan Ayan
+Project year: 25 Ocak 2023
+Project Version:1.0
+
+*/
+
+/* Config File */
+
+*{
+    box-sizing: border-box!important;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* background-image: url(btk-images/04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #d2ceda;
+    position: relative;
+}
+
+html{
+    font-size: 15px;
+}
+
+.f20{
+    font-size: .5rem;
+}
+
+/* nav */
+nav{
+    opacity: .9;
+}
+
+/* header */
+header .jumbotron{
+    background-image: url(btk-images/02.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    padding-top: 12rem;
+    height: 40rem;
+    opacity: .9;
+    z-index: -1;
+}
+
+#header-title-btk{
+    text-transform: uppercase;
+    color: black;
+}
+
+
+ /* breadcrumb */
+nav ol.breadcrumb{
+    margin-top:-1.6%;  
+    background-color: black!important;
+    opacity: .9;
+}
+
+.col-md-8 img:hover{
+    opacity: .9;
+}
+
+/* Footer */
+
+footer{
+    min-height: 20rem;
+    width: auto;
+}

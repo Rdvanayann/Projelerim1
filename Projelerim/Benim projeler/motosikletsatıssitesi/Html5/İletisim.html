@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ayan Motors İletişim</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Anasayfa.html">
+        <img src="../resimler/amt.jpg" width="40" height="40" alt="">
+        AYANMOTORS
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" style="color: #fff;" aria-current="page" href="Anasayfa.html">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: cyan;" href="Modeller.html">Modeller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: red;" href="İletisim.html">İletişim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: greenyellow;" aria-current="page" href="Hakkımızda.html">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: pink;" aria-current="page" href="Araçlarımız.html">Araçlarımız</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: chocolate;" aria-current="page" href="Fiyatlistesi.html">Fiyat Listesi</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <hr>
+  <hr>
+  <br>
+  <div class="container mt-5">
+    <div class="row yuk ">
+      <div class="col-md-7 mx-auto my-auto renk rounded-3 shadow">
+
+        <h2 class="display-3 text-center">KAYIT FORMU</h2>
+        <form action="" class="needs-validation" novalidate>
+          <fieldset class="p-4">
+            <legend class="mb-3">Site Üyelik Formu</legend>
+            <div class="row mb-3">
+              <label for="adsoyad" class="col-md-3 col-form-label">Adınız - Soyadınız</label>
+              <div class="col-md-9">
+                <input
+                 id="adsoyad"
+                  type="text"
+                   placeholder="Adınızı Soyadınızı Girin" class="form-control"
+                    required/>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="eamil" class="col-md-3 col-form-label">E-Mail Adresi</label>
+              <div class="col-md-9">
+                <input
+                 id="email"
+                  type="email"
+                   placeholder="E-Mail Adresinizi Girin" class="form-control"
+                    required/>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="adres" class="col-form-label col-md-3">Adres</label>
+              <div class="col-md-9">
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <input
+                     id="adres"
+                     type="text"
+                      placeholder="Şehir"
+                       class="form-control mb-3 mb-md-0 mb-lg-0"
+                        required/>
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                     id="adres"
+                     type="text"
+                      placeholder="İlçe"
+                       class="form-control mb-3"
+                        required/>
+                  </div>
+                  <div class="col-md-6">
+                    <input id="adres"
+                     type="text"
+                      placeholder="Posta Kodu"
+                       class="form-control mb-3"
+                        required>
+                  </div>
+                  <div class="col-md-6">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Türkiye</option>
+                      <option value="1">Azerbaycan</option>
+                      <option value="2">Pakistan</option>
+                      <option value="3">Türkmenistan</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="Neden" class="col-form-label col-md-3">Kayıt Nedeni</label>
+              <div class="col-md-9">
+                <textarea
+                 name=""
+                  class="form-control"
+                   id=""
+                   cols="30"
+                   rows="5">
+                  </textarea>
+              </div>
+
+            </div>
+            <div class="d-grid mx-auto col-3"><button type="submit" class="btn btn-info">Gönder</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+      
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()</script>
+</body>
+</html>

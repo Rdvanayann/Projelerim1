@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>One Pages Blog Page</title>
+    <meta name="" content="one pages blog pages">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="identifier-URL" content="https://www.btkakademi.gov.tr">
+
+    <link rel="icon" href="btk-images/favicon/favicon.jpg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Font awasome -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- External css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jquery ui -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="main_blog.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="45" class="container-fluid">
+
+
+    <!-- Menu -->
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+
+            <a href="index.htm" class="navbar-brand">Logo</a>
+            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- div.collapse>ul.ml-auto>li.nav.item>a.nav-link{Home} -->
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav item">
+                        <a href="#html-btk" class="nav-link">HTML5</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#css-btk" class="nav-link">CSS3</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#js-btk" class="nav-link">JS</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#jquery-btk" class="nav-link">JQUERY</a>
+                    </li>
+                </ul>
+
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav item">
+                        <a href="index.htm" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="html5.htm" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="" class="nav-link">Misyonumuz</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="" class="nav-link">İletişim</a>
+                    </li>
+                    <li class="nav item">
+                        <button id="btn_giris" class="ml-2 mt-2"><i class="fas fa-user-lock"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- 
+    <div class="modal fade" id="myUye" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3>Üye Grişi</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Email adresiniz" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="user_password" name="user_password" placeholder="Şifreniz" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+                            <button type="reset" class="btn btn-danger">Temizle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="modal fade" id="myUye" role="dialog">
+        <div class="modal-dialog ">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <button class="close text-white" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3 class="text-white">Üye Grişi</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="user_email" name="user_email" placeholder="Email adresiniz" required>
+                                <span id="validation_email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="user_phone" name="user_phone" placeholder="Telefon numaranız" required>
+                                <span id="validation_phone" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="user_password" name="user_password" placeholder="Şifreniz" required>
+                                <span id="validation_password" class="text-danger"></span>
+                            </div>
+                            <button id="btnSubmit" type="submit" class="btn btn-primary">Gönder</button>
+                            <button type="reset" class="btn btn-danger">Temizle</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <header>
+        <div class="jumbotron text-white bg-dark">
+            <div class="container">
+                <h2 class="display-3 text-white" id="header-title-btk">btk blog bootstrap</h2>
+                <p class="text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, eius.</p>
+                <a href="" class="text-warning ">DETAY...</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main.container>div.row>div.col-md-8+div.col-md-4 -->
+    <main class="container-fluid">
+        <div class="row">
+            <!-- SOL TARAF -->
+            <div class="col-md-8">
+                <!-- div.card>(img.card-img-top)+(div.card-body>h5.card-title{başlık}+p.card-text+button.btn{detay})+div card-footer -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 id="html-btk">HTML5</h2>
+                    </div>
+                    <img id="picture_1" src="btk-images/03.jpg" alt="" class="card-img-top" title="Resim">
+                    <div class="card-body">
+                        <h5 class="card-title">başlık</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore
+                            consequatur rem, fuga iusto error totam corrupti ab voluptas est eveniet hic delectus sint
+                            et blanditiis reprehenderit inventore enim numquam. Aut in corporis mollitia provident
+                            aliquam sit eum animi, pariatur voluptatibus assumenda, nesciunt est quisquam numquam
+                            repudiandae perferendis, ipsam nemo ipsa eius architecto ex dignissimos nulla ut deleniti
+                            quam? Ex, tempore soluta dolore excepturi atque molestias beatae sint nisi, similique
+                            necessitatibus dolorum assumenda eligendi magnam eum delectus iure recusandae nesciunt
+                            magni?</p>
+                        <button id="btn_tooltip" title="Detay için tıklayınız" class="btn btn-danger">detay</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer"> date 26 ocak</div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 id="css-btk">CSS3</h2>
+                    </div>
+                    <img src="btk-images/02.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">başlık</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore
+                            consequatur rem, fuga iusto error totam corrupti ab voluptas est eveniet hic delectus sint
+                            et blanditiis reprehenderit inventore enim numquam. Aut in corporis mollitia provident
+                            aliquam sit eum animi, pariatur voluptatibus assumenda, nesciunt est quisquam numquam
+                            repudiandae perferendis, ipsam nemo ipsa eius architecto ex dignissimos nulla ut deleniti
+                            quam? Ex, tempore soluta dolore excepturi atque molestias beatae sint nisi, similique
+                            necessitatibus dolorum assumenda eligendi magnam eum delectus iure recusandae nesciunt
+                            magni?</p>
+                        <button class="btn btn-danger">detay</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer"> date 26 ocak</div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 id="js-btk">JS</h2>
+                    </div>
+                    <img src="btk-images/04.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">başlık</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore
+                            consequatur rem, fuga iusto error totam corrupti ab voluptas est eveniet hic delectus sint
+                            et blanditiis reprehenderit inventore enim numquam. Aut in corporis mollitia provident
+                            aliquam sit eum animi, pariatur voluptatibus assumenda, nesciunt est quisquam numquam
+                            repudiandae perferendis, ipsam nemo ipsa eius architecto ex dignissimos nulla ut deleniti
+                            quam? Ex, tempore soluta dolore excepturi atque molestias beatae sint nisi, similique
+                            necessitatibus dolorum assumenda eligendi magnam eum delectus iure recusandae nesciunt
+                            magni?</p>
+                        <button class="btn btn-danger">detay</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer"> date 26 ocak</div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 id="jquery-btk">JQUERY</h2>
+                    </div>
+                    <img src="btk-images/02.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">başlık</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore
+                            consequatur rem, fuga iusto error totam corrupti ab voluptas est eveniet hic delectus sint
+                            et blanditiis reprehenderit inventore enim numquam. Aut in corporis mollitia provident
+                            aliquam sit eum animi, pariatur voluptatibus assumenda, nesciunt est quisquam numquam
+                            repudiandae perferendis, ipsam nemo ipsa eius architecto ex dignissimos nulla ut deleniti
+                            quam? Ex, tempore soluta dolore excepturi atque molestias beatae sint nisi, similique
+                            necessitatibus dolorum assumenda eligendi magnam eum delectus iure recusandae nesciunt
+                            magni?</p>
+                        <button class="btn btn-danger">detay</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer"> date 26 ocak</div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>BOOTSTRAP</h2>
+                    </div>
+                    <img src="btk-images/03.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">başlık</h5>
+                        <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore
+                            consequatur rem, fuga iusto error totam corrupti ab voluptas est eveniet hic delectus sint
+                            et blanditiis reprehenderit inventore enim numquam. Aut in corporis mollitia provident
+                            aliquam sit eum animi, pariatur voluptatibus assumenda, nesciunt est quisquam numquam
+                            repudiandae perferendis, ipsam nemo ipsa eius architecto ex dignissimos nulla ut deleniti
+                            quam? Ex, tempore soluta dolore excepturi atque molestias beatae sint nisi, similique
+                            necessitatibus dolorum assumenda eligendi magnam eum delectus iure recusandae nesciunt
+                            magni?</p>
+                        <button class="btn btn-danger">detay</button>
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer"> date 26 ocak</div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Table</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-dark table-striped">
+                                <caption>Başlık</caption>
+                                <thead>
+                                    <tr>
+                                        <th>1.alan</th>
+                                        <th>2.alan</th>
+                                        <th>3.alan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                        <td>Alan</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td class="text-center" colspan="3">BTK Akademi</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div style="opacity: 0.6;" class="card-footer"> date 26 ocak</div>
+                </div>
+
+                <div class="card card-columns mb-4">
+                    <div class="bg-danger" style="min-height: 15rem;"></div>
+                    <div class="bg-primary " style="min-height: 15rem;"></div>
+                </div>
+
+                <div class="card card-columns mb-4">
+                    <div class="bg-danger" style="min-height: 15rem;"></div>
+                </div>
+
+                <div class="card card-columns mb-4">
+                    <div class="bg-danger" style="min-height: 15rem;"></div>
+                </div>
+            </div>
+
+            <!-- SAĞ TARAF -->
+            <div class="col-md-4">
+                <!-- div.card>div.header>h6{Arama}+div.card-body -->
+                <div class="card">
+                    <div class="header">
+                        <h6>Arama</h6>
+                        <div class="card-body">
+                            <div class="input-group"><input id="tags" type="text" class="form-control"
+                                    placeholder="Arama Alanı">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- div.card>div.card-header>h3{Sayfa}+div.card-body>div.row>(div.col-6>ul.list-unstyled>(li>a)*4)+div.col-6>ul.list-unstyled>(li>a)*4) -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="text-center text-muted">En çok ziyaret edilenler</h5>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">Html5</a></li>
+                                            <li><a href="">Css3</a></li>
+                                            <li><a href="">JS</a></li>
+                                            <li><a href="">Jquery</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul class="list-unstyled">
+                                            <li><a href="">Servlet</a></li>
+                                            <li><a href="">JSP</a></li>
+                                            <li><a href="">JSF</a></li>
+                                            <li><a href="">Spring</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Tag Cloud</h5>
+                            <div class="card-body">
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-1</a>
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-2</a>
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-3</a>
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-4</a>
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-5</a>
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-6</a>
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-7</a>
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-8</a>
+                                <a class="btn btn-primary border-radius mt-1" href="">deneme-9</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Önceki</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">İleri</a></li>
+                </ul>
+            </nav>
+    </main>
+
+    <footer class="text-white bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 border border-primary">
+                    <ul>
+                        <li><a href="">deneme2</a></li>
+                        <li><a href="">deneme3</a></li>
+                        <li><a href="">deneme4</a></li>
+                        <li><a href="">deneme5</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mt-5 border border-danger">
+                    <p> Tüm Hakları Saklıdır.2023 &copy;</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

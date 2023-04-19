@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="one pages">
+    <meta name="keywords" content="html5,css3,jquery">
+    <meta name="author" content="Rıdvan Ayan">
+    <meta name="title" content="one pages, btk Akademi">
+    <meta name="identifier-URL" content="https://www.site.com.tr">
+    <meta name="robots" content="noindex">
+
+    <title>One Page</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- fontawasome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- one pages css -->
+    <link rel="stylesheet" href="one_pages_style.css">
+    <!-- Jquery ui -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- one pages -->
+    <script src="one_pages_main.js"></script>
+
+    <style>
+        .ui-dialog{
+            width: 50%!important;
+            height: 300px;
+        }
+
+        #dialog{
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="background-color: #FF3433; height: 26rem;" >
+        <div class="container">
+            <div id="logo">
+                <a href="" class="SANA-YAKIŞIR-AKADEMİ">
+                    <img id="logo-image" src="image/Logo.png" alt="SANA YAKIŞIR AKADEMİ">
+                    <!-- SANA YAKIŞIR AKADEMİ -->
+                </a>
+                <div id="menu" style="font-size: medium;">
+                    <ul class="upperCase">
+                        <li class="menu-item"><a href="#top"><i class="fas fa-house-user"></i>Home</a></li>
+                        <li class="menu-item"><a href="#division-contact"><i class="fas fa-user-check"></i>Career</a>
+                        </li>
+                        <li class="menu-item"><a href="#division-1-main"><i class="fas fa-newspaper"></i>New</a></li>
+                        <li class="menu-item"><a href="#division-sss"><i class="fas fa-newspaper"></i>S.S.S</a></li>
+                        <li class="menu-item"><a href="#about-me"><i class="far fa-id-card"></i>About Me</a></li>
+                        <li class="menu-item"><a href="#form-email"><i class="far fa-id-card"></i>Contact</a></li>
+                        <li class="menu-item"><button id="dialogButton" style="position: fixed; margin-top: 0.5px;"><i class="fas fa-user-check" style="margin-right: 0.20px; margin-top: 5px;"></i></button></li>
+                        <li class="menu-item"> <input type="text" id="tags" style="height: 4rem!important; margin-right: 4px;"><i class="fas fa-search" style="font-size: small;"></i></li>
+                    </ul>
+                </div>
+                <div id="dialog" style="background-color: bisque;">
+                   <form action="#" method="post">
+                    <div class="form-group">
+                        <input id="login_email" name="email"  type="email" class="form-control" placeholder="Email adres giriniz" style="font-size: medium;">
+                        <small id="login_password" name="login_password" class="text-danger" style="font-size: small;">Email girmediniz</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Şifrenizi giriniz" style="font-size: medium;">
+                        <small class="text-danger" style="font-size: small;">Şifre girmediniz</small>
+                    </div>
+                    <button style="color: white; background: black; margin-top: 5px; font-size: large;" type="submit" id="submit_id">Gönder</button>
+                   </form>
+                    
+                </div>
+            </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <header style="height: 32rem;">
+        <div class="image-header">
+            <div class="theme-header" style="background-image: url('./image/header.jpg'); height: 35rem;">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Sana Yakışır Akademi One Pages</h1>
+                <p style="color: white;  padding: 5px; margin-bottom: 1rem; font-size: medium;"><b>SANA YAKIŞIR AKADEMİ'ye HOŞGELDİNİZ...</b></p>
+                <a href="#" class="btn-header" style="margin-bottom: 2rem; font-size: small;">Daha Fazla ...</a>
+            </div>
+    </header>
+
+    <div>
+        <!-- section-1 -->
+        <section id="division-1-main">
+            <div class="piece">
+                <h2 style="margin-top: 5rem; font-size: medium;"><b>SANA YAKIŞIR AKADEMİ</b></h2>
+                <p style="color: white; font-size: medium;">Teknolojiye ve kendini geliştirmek isteyen herkese yeni bilgiler ile donatmaya
+                    hazırız...</p>
+            </div>
+        </section>
+        <!-- section-2 -->
+        <section id="division-2-list">
+            <ul>
+                <li>
+                    <div class="area">
+                        <img src="image/01.jpg" alt="">
+                        <div class="area-div">
+                            <h3 style="color: red; font-size: medium;">Frondend</h3>
+                            <p style="color: black; font-size: medium;">Burası Frondend Geliştirici Hakkında Bilgilendirici Eğitim Alanıdır.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="area">
+                        <img src="image/02.jpg" alt="">
+                        <div class="area-div">
+                            <h3 style="color: red; font-size: medium;">Backend</h3>
+                            <p style="color: black; font-size: medium;">Burası Backend Geliştirici Hakkında Bilgilendirici Eğitim Alanıdır.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="area">
+                        <img src="image/03.jpg" alt="">
+                        <div class="area-div">
+                            <h3 style="color: red; font-size: medium;">Web Services</h3>
+                            <p style="color: black; font-size: medium;">Burası Web Services Geliştirici Hakkında Bilgilendirici Eğitim Alanıdır.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="area">
+                        <img src="image/04.jpg" alt="">
+                        <div class="area-div">
+                            <h3 style="color: red; font-size: medium;">DB</h3>
+                            <p style="color: black; font-size: medium;">Burası DB Geliştirici Hakkında Bilgilendirici Eğitim Alanıdır.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- section-3 -->
+        <!-- section#division-3-career>(div#left-main>img)+(div#right-main>p{lorem}+(ul>li{teknoloji $}*4)) -->
+
+        <h3 id="about-me" style="color: yellow; font-size: medium;">ABOUT ME</h3>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">About</a></li>
+                <li><a href="#tabs-2">Vision</a></li>
+                <li><a href="#tabs-3">Mission</a></li>
+            </ul>
+    <div id="tabs-1">
+        <p style="color: black; font-size: medium;">Hakkımızda, Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.</p>
+    </div>
+
+    <div id="tabs-2">
+        <p style="color: black; font-size: medium;">Vizyonumuz, Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. </p>
+    </div>
+
+    <div id="tabs-3">
+        <p style="color: black; font-size: medium;">Misyonumuz, Burası Misyonumuz Bölümüdür. Burası Misyonumuz Bölümüdür. Burası Misyonumuz Bölümüdür. Burası Misyonumuz Bölümüdür. </p>
+    </div>
+        </div>
+
+        <section id="division-contact" class="clearfix">
+            <div class="piece">
+                <h2 style="color: white; text-transform: uppercase; padding-top: 7rem; font-size: medium;">Hakkımızda</h2>
+                <p style="color: white; font-size: small;">Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.Burası Hakkımızda Metnidir.  Burası Hakkımızda Metnidir.</p>
+            </div>
+        </section>
+
+        <section id="division-sss" class="clearfix" style="background-color: #393639;">
+            <div class="piece">
+                <h2 style="color: white; padding-top: 7rem; text-transform: uppercase; font-size: medium;">Misyon / Vizyon</h2>
+                <p style="color: white; font-size: small;">Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. Burası Vizyonumuz Bölümüdür. </p>
+            </div>
+        </section>
+
+        <h2 id="division-sss" style="color: white; font-size: x-large;">S.S.S Alanı</h2>
+        <!-- S.S.S Bölümü -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item" style="font-size: large;">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div style="font-size: medium; "><b>Başlık1</b></div>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" style="font-size: large;">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div style="font-size: medium;"><b>Başlık2</b></div>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" style="font-size: large;">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div style="font-size: medium;"><b>Başlık3</b></div>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- form input -->
+    <!-- section#form-email>form:post>inp*4+inp:b -->
+    <!-- section#form-email>form:post>div.form-group>label{asd}+inp*4+inp:b -->
+
+    <!-- resizable yapısı -->
+    <!-- <div id="resizable" class="ui-widget-content">
+        <h4 class="ui-widget-header">Responsive</h4>
+    </div> -->
+    
+    <section id="form-email" class="clearfix">
+        <div class="row" style="background-color: crimson; ">
+            <h1 style="color: white; font-size: x-large;">İletişim</h1>
+            <p style="color: white; font-size: medium; ">
+                İstanbul/Ankara <br>
+                <a style="color: white;" href="mailto:btkakademi@mail.address">rdvanayan@hotmail.com</a><br>
+                <a style="color: white; " href="tel:+90 521 369 78 45">+90 539 821 61 96</a>
+            </p>
+        </div>
+
+
+        <div class="col100 clearfix" style="margin-bottom: 5rem; margin-top: 5rem;">
+            <h4 style="color: black; margin-bottom: 3rem; font-size: x-large;"><b>MAPS</b></h4>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=ankara&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                        scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://123movies-to.org"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 310px;
+                            width: 100%;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 310px;
+                            width: 100%;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+        <h4 style="color: black; margin-bottom: 5rem; font-size: x-large;"><b>EMAİL</b></h4>
+        <div class="col80 clearfix" style="margin-bottom: 5rem; padding-left: 40rem;">
+            <form action="" method="post">
+
+                <div class="form-group-all">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="fullName" id="fullName" style="font-size: small;"
+                            placeholder="Ad soyad giriniz" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="email" name="email" id="email" style="font-size: small;"
+                            placeholder="Email adresinizi giriniz" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea style="margin-bottom: 3rem; font-size: small;" placeholder="Mesajınız" class="form-control" name="message" id="message" cols="30" rows="8"></textarea>
+                    </div>
+
+                    <input style="width: 20%; padding-right: 40rem; font-size: medium; color: red;" class="btn" type="reset" value="Temizle">
+                    <br>
+                    <input style="width: 20%; padding-right: 40rem; font-size: medium; color: #007bff;" class="btn" type="submit" value="Gönder">
+                </div>
+            </form>
+        </div>
+
+    </section>
+    </main>
+
+    <div id="bottom">
+        <a href="#top" style="font-size: small;"><i class="fas fa-arrow-up"></i>Top</a>
+    </div>
+
+    <!-- footer -->
+    <!-- footer>div#division-footer>a{} -->
+
+    <footer class="clearfix" style="background-color: black;">
+        <div id="division-footer">
+            <a href="index.htm" style="font-size: large;"><b>SANA YAKIŞIR AKADEMİ</b></a>
+            <p style="color: #007bff; font-size: medium;">Tüm Hakları Sana Yakışır'a Saklıdır. &copy;</p>
+            <address>
+                <p style="color: white; font-size: medium;">
+                    İstanbul/Ankara <br>
+                    <a style="color: white;" href="mailto:btkakademi@mail.address">rdvanayan@hotmail.com</a><br>
+                    <a style="color: white;" href="tel:+90 521 369 78 45">+90 539 821 61 96</a>
+                </p>
+            </address>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
